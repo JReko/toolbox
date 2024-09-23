@@ -41,6 +41,9 @@ function print_terraform_import_command() {
   local metadata_namespace="$3"
   local metadata_name="$4"
 
+  # using terragf as a command myself terragf is a simple script to use terragrunt when possible otherwise terraform
+  # https://github.com/DaazKu/unix-setup/blob/master/%24HOME/bin/terragf
+
   echo "terragf import $resource_type.$resource_name $metadata_namespace/$metadata_name"
 }
 
