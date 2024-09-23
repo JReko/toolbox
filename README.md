@@ -17,7 +17,7 @@ Each script is placed within its own folder, which includes:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/toolbox.git
+   git clone https://github.com/jreko/toolbox.git
    ```
 2. Navigate to the folder of the script you want to use.
 

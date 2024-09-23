@@ -20,12 +20,13 @@ output_folder=$(normalize_path "$3")
 for file in "${yaml_cronjobs_folder_path}/${file_prefix}"*.yml; do
   # Extract the filename without extension
   filename="${file##*/}"
-  # Remove the .yml extension from filename (optional)
+  # Remove the .yml extension from filename
+  filename="${filename%.yml}"
+    # Remove the .yaml extension from filename
   filename="${filename%.yml}"
   
   # Run the k2tf command with the current file and output filename
   k2tf -f "$file" -o "${output_folder}/${filename}.tf"
   
-  # Add additional actions here if needed (e.g., printing success message)
   echo "Converted $file to ${filename}.tf"
 done
