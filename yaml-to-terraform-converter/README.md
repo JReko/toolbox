@@ -1,6 +1,6 @@
 # YAML to Terraform Converter
 
-This script converts Kubernetes YAML configuration files for cronjobs into Terraform files. It simplifies the management of infrastructure as code by enabling users to easily convert their existing YAML configurations into Terraform syntax.
+This script batch converts Kubernetes YAML configuration files into Terraform files. It simplifies the management of infrastructure as code by enabling users to easily convert their existing YAML configurations into Terraform syntax.
 
 ## Overview
 

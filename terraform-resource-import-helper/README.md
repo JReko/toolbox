@@ -1,6 +1,6 @@
 # Terraform Resource Import Helper
 
-The `terraform-resource-import-helper.sh` script simplifies the process of importing existing resources into Terraform by extracting relevant information from `.tf` files and generating the appropriate `terraform import` commands. This tool is particularly useful for migrating existing infrastructure into Terraform management.
+The `terraform-resource-import-helper.sh` script simplifies and batches the process of importing existing resources into Terraform by extracting relevant information from `.tf` files and generating the appropriate `terraform import` commands. This tool is particularly useful for migrating existing infrastructure into Terraform management.
 
 ## Overview
 
