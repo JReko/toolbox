@@ -7,12 +7,12 @@ normalize_path() {
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 3 ]; then
-  echo "Usage: $0 <yaml_cronjobs_folder_path> <file_prefix> <output_folder>"
+  echo "Usage: $0 <yaml_jobs_folder_path> <file_prefix> <output_folder>"
   exit 1
 fi
 
 # Normalize the paths to ensure no trailing slash
-yaml_cronjobs_folder_path=$(normalize_path "$1")
+yaml_folder_path=$(normalize_path "$1")
 file_prefix=$2
 output_folder=$(normalize_path "$3")
 
@@ -26,7 +26,7 @@ process_files() {
   local extension=$1
 
   # Loop through files with the given extension
-  for file in "${yaml_cronjobs_folder_path}/${file_prefix}"*"$extension"; do
+  for file in "${yaml_folder_path}/${file_prefix}"*"$extension"; do
     # Ensure the file exists
     if [ -f "$file" ]; then
       # Extract the filename without extension
