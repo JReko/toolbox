@@ -20,7 +20,8 @@ This handy script scans a specified directory for Terraform files that match a g
 
 ### Prerequisites
 
-- Make sure you have Terraform installed on your system. You can find installation instructions [here](https://www.terraform.io/downloads.html).
+- Ensure you have `hcl2json` installed on your system. [hcl2json GitHub Repository](https://github.com/tmccombs/hcl2json)
+- Ensure you have Terraform installed on your system. You can find installation instructions [here](https://www.terraform.io/downloads.html).
 
 ### Script Parameters
 
